@@ -98,4 +98,65 @@ a:hover {
      background: #1d4ed8;
 }
 
+.cart-sidebar {
+    background: rgb(43, 155, 155);
 
+    padding: 20px;
+
+    border-radius: 8px;
+
+    height: fit-content;
+
+    position: sticky;
+    top: 100px;
+}
+
+.cart-sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: blue;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(32, 32, 32, 0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 28px;
+
+    border-radius: 8px;
+
+    animation: fadeIn 0.5s ease;
+}
