@@ -11,3 +11,45 @@ body {
     line-height: 1.4;
 }
 
+.header {
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+a[href] {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+} 
+
+.links-list {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+a:hover {
+    color: blue;
+}
+
+.product-grid {
+    display: grid;
+}
