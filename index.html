@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quikreads</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <link rel="stylesheet" href="contact.html">
 </head>
 <body>
     <header class="header">
-        <div class="logo"> <h1>Quikreads</h1></div>
+        <div class="logo"><i class="fa-solid fa-book"></i><h1>Quikreads</h1></div>
 
         <nav class="links">
             <ul class="list">
@@ -19,7 +22,7 @@
             </ul>
 
         </nav>
-        <button class="cart-btn"> cart</button>
+        <button type="button" class="cart-btn"><i class="fa-solid fa-cart-arrow-down"></i>  cart</button>
 
     </header>
     <section id="home" class="home">
@@ -34,7 +37,7 @@
             We offer a wide range of books and other related literature here at quikreads
          </p>
          <select>
-            <option>filter by category</option>
+            <summary>filter by category</summary>
             <option>Novels</option>
             <option>Childrens books</option>
             <option>Short stories</option>
@@ -57,25 +60,15 @@
                      <h3>Novels</h3> 
                      <img src="assets/images/novel.jpg" alt="novel"  width="50%" height="5%"
                      class="product-card-img">
-                    <p>
-                        Our novels are our most popular product on sale. <br>
-                        WE offer a wide range of genres in both fictional <br> and non-fictional work
-                        including: <br>
-                        <ul>
-                            <li>Romance</li>
-                            <li>Horror</li>
-                            <li>Action</li>
-                            <li>comedy</li>
-                            <li>thriller</li>
-                        </ul> <br>
-                        ...and many more
-
-                    </p>
-                   
-
+                     
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    
                     <p class="price">2000/=</p>
 
-                    <Button type="submit">Add to cart</Button>
+                    <Button type="submit" class="button">Add to cart</Button>
+                    
                 </div>
                    
                 
@@ -85,31 +78,6 @@
                     <h3>Childrens books</h3>
                     <img src="assets/images/cbook.jpg" alt="childrens books" width="50%" 
                     class="product-card-img">
-                    <p>
-                         Our childrens books are highly rated by many child <br> psychologists across 
-                         the country and are recommend for early child <br> development. <br>
-                        WE offer a wide range of genres in both fictional and non-fictional work
-                    </p>
-                    
-
-                    <p class="price">1000/=</p>
-
-                    <button type="submit">Add to cart</button>
-
-                </div>
-            </article>
-            <article class="product-card">
-
-                <div class="product-info">
-                    
-                    <h3>graphic novels</h3>
-                    <img src="assets/images/gnovel.jpg" alt="graphic novel" width="50%" 
-                    class="product-card-img">
-                    <p>
-                        Graphic novels for all ages available
-                    </p>
-
-                    
 
                     <div class="rating">
                         ★★★★★
@@ -117,12 +85,69 @@
 
                     <p class="price">1000/=</p>
 
-                    <button>Add to Cart</button>
+                    <button type="submit" class="button">Add to cart</button>
+                   
                 </div>
             </article>
+            <article class="product-card">
+
+                <div class="product-info">
+                    
+                    <h3>graphic novels</h3>
+                    <img src="assets/images/gnovel.jpg" alt="graphic novel" 
+                    class="product-card-img">
+                    <div class="rating">
+                        ★★★★
+                    </div>
+                    <p>
+                        Graphic novels for all ages available
+                    </p>
+
+                 </div>
+
+                    <p class="price">1000/=</p>
+
+                    <button type="submit" class="button">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product-card">
+
+                <div class="product-info">
+                    <h3>magazines</h3>
+                    <img src="assets/images/magazines.jpg" alt="magazines" class="product-card-img">
+                    <div>
+                          ★★★
+                    </div>
+                    <p class="price">2500/=</p>
+                     <button type="submit" class="button">Add to Cart</button>
+
+                </div>
+
+            </article>
+            <article class="product-card">
+                 <div class="product-info">
+                    <h3>journals</h3>
+                    <img src="assets/images/journal.jpg" alt="journals" class="product-card-img">
+                    <div>
+                          ★★★★★
+                    </div>
+                    <p class="price">2200/=</p>
+                     <button type="submit" class="button">Add to Cart</button>
+
+            </article>
+            <article class="product-card">
+                 <div class="product-info">
+                    <h3>textbooks</h3>
+                    <img src="assets/images/textbook.jpg" alt="textbooks" class="product-card-img">
+                    <div>
+                          ★★★★
+                    </div>
+                    <p class="price">4200/=</p>
+                     <button type="submit" class="button">Add to Cart</button>
+
 
         </section>
-        <aside class="cart-sidebar">
+        <aside class="cart-sidebar" id="checkout">
             <h2>Shopping Cart</h2>
 
             <div class="cart-item">
@@ -143,26 +168,39 @@
             <button class="checkout-btn">checkout</button>
         </aside>
     </main>
-    <div class="modal">
-        <div class="modal-content">
-
-            <span class="close-btn">&times;</span>
-
-            <img src="assets/images/novel.jpg" alt="novel" width="50%">
-
-            <h2>Novel</h2>
-
-            <p>
-                long form stories involving deep and complex characters in different scenarios
-                and genres
-            </p>
-
-            <p class="modal-price">$1,299</p>
-
-            <button>Add to Cart</button>
-
-        </div>
-    </div>
+   
 
 </body>
+      <form action="/submit-contact" method="post" id="contact">
+        <legend>submitions</legend>
+
+        <div class="form-group">
+                        <label for="fname">Full Name:</label>
+                        <input type="text" id="fname" name="fname" required minlength="4" 
+                        placeholder="e.g. john doe">
+         </div>
+
+         <div class="form-group">
+                        <label for="uemail">Email Address:</label>
+                        <input type="email" id="uemail" name="uemail" required placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required placeholder="enter password">
+        </div> <br>
+        <button type="submit" class="submit-btn">submit form</button>
+
+      </form>
+<footer class="footer">
+    <div class="social-links">
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+
+    </div>
+    <a href="#home"><i class="fa-solid fa-house"></i>home</a> <br>
+    <a href="#books"><i class="fa-solid fa-book"></i>books</a> <br>
+    <a href="#checkout"><i class="fa-solid fa-bag-shopping"></i>checkout</a> <br>
+    <a href="#contact"><i class="fa-solid fa-address-book"></i>contact</a> <br>
+</footer>
 </html>
