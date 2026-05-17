@@ -48,7 +48,7 @@ Quikreads is a front-end e-commerce interface designed for showcasing literature
 
 
 
-## 🛠 Technologies Used
+## Technologies Used
 ```
 | Technology | Purpose |
 |---|---|
