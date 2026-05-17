@@ -124,7 +124,7 @@ Installation
    
 ```bash
    git clone https://github.com/Conrad008/quikreads.git
-   cd luxrent
+   cd quikreads
 ```
 
 2. **Open the project:**
